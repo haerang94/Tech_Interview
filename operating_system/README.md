@@ -167,9 +167,23 @@ OS가 데드락의 가능성을 파악하기위해 모든 process의 상태를 �
 ===========================================================================================
 ### CHAPTER 10
 ### Virtual Memory 가상 메모리란 무엇인가요?
+vm은 메모리 관리기법 중 하나로 memory에 process 전체를 load 하지 않고 page단위로 load 시킴으로써 
+실제 물리적 memory의 크기보다 더 큰 프로그램을 실행시킬 수 있는 기술입니다.
+
 ### Demand Paging 과정에 대해 설명해보세요.
+page demand 요청이 들어오면 OS는 먼저 page talbe의 vaild-invalid bit를 통해 해당 page가 physical memory에 있는지 확인합니다. 
+
+만약 physical memory에 해당 page가 load되있지 않다면 
+secondary storge에 있는 page를 physical memory에 적재함으로써 
+process가 실행될 수 있도록 해줍니다.
+
 ### Page falt가 발생했을때 OS가 handling하는 과정에 대해 설명해보세요.
-### LRU Page replacement 기법에 대해 설명해 보세요 
+OS는 page falt를 발생 시킨 process를 waiting state로 (trap)변경하고 secondary storage에 있는 page를 찾아 free frame에 load하는 작업을 처리합니다. 만약 free frame이 존재하지 않는 다면 교체할 frame을 선정해 frame에 page를 로드 한 후 Page table에 변경내용을 update 해줍니다. 마지막으로 waiting state에 있는 process를 다시 실행시켜 줍니다.
+
+### LRU Page replacement 기법에 대해 설명해 보세요.
+Page Replacemet Algorithm 중 하나로 가장 오랫동안 사용되지 않은 page를 
+교체할 victim frame으로 선정해 
+physical memory에 로드된 page를 교체하는 기법입니다.  
 =============================================================================================
 
 ### CHAPTER 11
