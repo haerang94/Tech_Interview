@@ -19,3 +19,5 @@
 3. link state routing algorithm의 단점으로 path oscillation가 있습니다. 이러한 현상이 일어나는 이유는 무엇인가요? 
 4. distance vector routing algorithm에서 "distance vector"란 무엇을 지칭하나요? 
 5. distance vector routing algorithm에서 x에서 y까지의 최소 비용 경로를 결정하는 방법을 설명하시오. 
+6. 기본적인 distance vector routing algorithm에서 count-to-infinity가 발생하게 하는, 이 algorithm의 한계가 무엇인가요? 
+7. Distance vector routing algorithm에서 "poisoned reverse"는 router들간의 path cost 정보 교환을 어떻게 하라고 요구하고 있나요?
