@@ -1,5 +1,21 @@
 # network
 
+##### Application layer
+1. Web Application의 동작 과정을 설명하세요.
+    (웹 브라우저 검색창에서 키워드를 입력하면 결과가 나오는 과정)
+
+1-1. DNS 서비스에 대해 아는 대로 설명하세요 (구조, 동작 원리) 
+2. http 프로토콜에 대해 아는 대로 설명하세요 (계층, 특징, 응답 메시지, 요청 메시지 등)
+3. cookies와 session에 대해 설명하세요.
+4. Cache 에 대핸 설명하세요.
+5. http와 https에 대해 설명하세요.
+
+6. 전자 메일 서비스의 동작 과정을 설명하세요.
+7. SMTP 프로토콜에 대해 아는 대로 설명하세요. (계츨, 특징, 응답 메시지, 요청 메시지 등)
+8. POP 프로토콜과 IMAP 프로토콜에 대해 아는 대로 설명하세요. 
+
+9. FTP 프로토콜에 대해 아는 대로 설명하세요.
+
 ##### Transport layer
 1. TCP와 UDP의 차이에 대해 설명해보세요
 2. stop-and-wait 방식의 TCP 전송방식에 대해 설명해보세요
@@ -21,3 +37,9 @@
 5. distance vector routing algorithm에서 x에서 y까지의 최소 비용 경로를 결정하는 방법을 설명하시오. 
 6. 기본적인 distance vector routing algorithm에서 count-to-infinity가 발생하게 하는, 이 algorithm의 한계가 무엇인가요? 
 7. Distance vector routing algorithm에서 "poisoned reverse"는 router들간의 path cost 정보 교환을 어떻게 하라고 요구하고 있나요?
+
+
+##### DataLink layer
+1. 데이터 링크 계층은 무슨 역할을 하는지 설명해 보세요.
+2. LAN의 구조(Topology)에 대해 설명해 보세요 
+3. CSMA/CD에 대해 설명해보세요. (필요성, 동작과정) 
